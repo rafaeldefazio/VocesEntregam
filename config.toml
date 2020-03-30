@@ -1,0 +1,50 @@
+baseURL = "/"
+baseIcon = "fa fa-home"
+languageCode = "pt-br"
+title = "Vocês entregam?"
+theme = "bulma"
+
+[params]
+  theme_variant = "" # possible value for the theme_variant `cerulean,cosmo,cyborg,darkly,flatly,journal,litera,lumen,lux,materia,minty,pulse,sandstone,simplex,slate,solar,spacelab,superhero,united,yeti`
+  description = "A Simple Blog with Bulma" # Suggested, controls default description meta and landing page
+  hide_author = true # Optional, set true to hide author name on posts
+  images = [] # Suggested, controls default OpenGraph images controls author name display on meta tag
+  github  = "rafaelbdefazio" # Optional, to display link to github account in menu bar
+
+
+[menu]
+
+
+
+
+    [[menu.nav]]
+    name = "Início"
+    URL = "/"
+    pre = "fa fa-home"
+    weight = 1
+
+
+
+    [[menu.nav]]
+    name = "Supermercados"
+    URL = "/supermercados"
+    pre = "fa fa-shopping-cart"
+    weight = 2
+    
+
+
+    [[menu.nav]]
+    name = "Padarias"
+    URL = "/padarias"
+    pre = "fas fa-bread-slice"
+    weight = 3
+
+
+
+    [[menu.nav]]
+    name = "Açougues"
+    URL = "/açougues"
+    pre = "fas fa-bacon"
+    weight = 4
+
+
