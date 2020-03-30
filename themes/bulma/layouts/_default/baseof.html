@@ -37,6 +37,7 @@
     <!-- http://regexr.com/3f9d1 -->
     {{ if ge (len $lazylist) 1 }}
     <script async src="/js/lazysizes.min.js"></script>
+
     {{ end }}
 </head>
 <!--theme variation-->
@@ -46,9 +47,20 @@
     <main>{{ block "main" . }}{{ end }}</main>
     <footer>{{ block "footer" . }}{{ end }}</footer>
 
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+$('.navbar-burger').click(function() {
+  $('#navbarMenuHeroA, .navbar-burger').toggleClass('is-active');
+});
+  </script>
     <script async type="text/javascript" src="/js/bulma.js"></script>
     <script async type="text/javascript"  src="/js/clipboard.min.js"></script>
     <script async type="text/javascript"  src="/js/clip.js"></script>
+    <script type="text/javascript">
+    </script>
 </body>
 
 </html>
