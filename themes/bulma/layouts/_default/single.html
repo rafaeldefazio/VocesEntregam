@@ -1,0 +1,143 @@
+{{ define "title" -}}
+{{ .Title }} | {{ .Site.Title }}
+{{- end }}
+
+{{ define "header" }} {{ partial "menu" . }} {{ end }} 
+
+{{ define "main" }}
+
+
+<div class="container">
+
+
+  <!-- START ARTICLE FEED -->
+
+  <section class="articles">
+    <div class="column is-8 is-offset-2">
+
+
+      <!-- START ARTICLE -->
+      <div class="card article">
+        <div class="card-content">
+        
+              <div class="columns is-vcentered">
+                <div class="column">
+                  <figure class="image">
+                  <img src="{{ .Params.image }}">
+                </figure>
+                </div>
+                <div class="column">
+
+                   <p class="title article-title">{{ .Title }}</p>
+
+                  <div class="field is-grouped is-grouped-multiline">
+                  <div class="control">
+                    <div class="tags has-addons">
+                      <span class="tag is-light is-medium"><i class="fas fa-money-bill"></i></span>
+                      <span class="tag is-success is-medium">{{ .Params.Price_delivery }}</span>
+                    </div>
+                  </div>
+
+                    <div class="control">
+                    <div class="tags has-addons">
+                      <span class="tag is-light is-medium"><i class="fas fa-clock"></i></span>
+                      <span class="tag is-info is-medium">{{ .Params.Time_delivery }}</span>
+                    </div>
+                  </div>
+              
+                </div>
+
+
+                 <h3>{{ .Description }}</h3>
+                </div>
+  
+              </div>
+
+
+
+          <br/>
+
+           
+
+           <br/>
+
+
+          <div class="content article-body">
+            <h1 class="title is-4 has-text-weight-bold">Mais informações</h1>
+            <hr>
+            <p>{{ .Content }} </p>
+          </div>
+
+
+          <div class="items mt-20">
+    <div class="title is-4 has-text-weight-bold">
+      <p>Entre em contato</p>
+      <hr>
+    </div>
+    
+    <div class="items-body">
+
+
+
+             <ul>
+              {{ range .Params.Whats }}
+
+               {{ $wp := replaceRE "(\\s)" "" . }} 
+               {{ $wp := replace $wp "(" "" }}
+               {{ $wp := replace $wp ")" "" }}
+               {{ $wp := replace $wp "-" "" }}
+
+                <a href="https://wa.me/55{{$wp}}" target="_blank"><li><i class="fab fa-whatsapp" style="color: #075e54" ></i>  {{ . }}</li></a>
+              {{ end }}
+
+
+                {{ range .Params.Phone }}
+
+               {{ $wp := replaceRE "(\\s)" "" . }} 
+               {{ $wp := replace $wp "(" "" }}
+               {{ $wp := replace $wp ")" "" }}
+               {{ $wp := replace $wp "-" "" }}
+
+                <a href="tel:+55{{.}}"><li><i class="fas fa-phone"></i>  {{ . }}</li></a>
+              {{ end }}
+
+
+                      {{ if .Params.facebook}}
+                  <a target="_blank" href="https://www.fb.com/{{.Params.facebook}}"><li>
+                    <i class="fab fa-facebook" style="color: #3b5998"></i>  {{ .Params.facebook }}
+                  </li></a>
+                  {{ end}}
+
+                   {{ if .Params.instagram}}
+                  <a target="_blank" href="https://www.instagram.com/{{.Params.facebook}}"><li>
+                    <i class="fab fa-instagram" style="color: #E1306C"></i>  {{ .Params.instagram }}
+                  </li></a>
+                  {{ end}}
+            </ul>
+
+
+
+      
+
+
+    </div>
+  </div>
+
+        </div>
+      </div>
+
+
+      
+      <!-- END ARTICLE -->
+      
+      </div>
+
+    </section>
+    <!-- END ARTICLE FEED -->
+  </div>
+
+
+
+  {{ end }} 
+  
+  

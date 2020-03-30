@@ -1,0 +1,72 @@
+<div class="card" *ngFor="let item of items | async">
+  <div class="card-header"><p class="card-header-title">{{ .Title }}</p></div>
+  <div class="card-content">
+
+    <div class="content">
+
+      <h4>Informações</h4>
+      <p>{{ .Description }}</p>
+
+
+<!--      <div class="is-divider" data-content="CONTATO"></div>-->
+
+
+      <br/>
+      <h4>Contato</h4>
+
+
+      <ul>
+      {{ range .Params.whats }}
+        <li>
+          <i class="fab fa-whatsapp" style="color: #075e54"></i> {{ . }}
+        </li>
+      {{ end }}
+
+      {{ range .Params.phone }}
+        <li>
+          <i class="fas fa-phone" style="color: #075e54"></i> {{ . }}
+        </li>
+      {{ end }}
+
+
+        {{ if .Params.facebook}}
+        <li>
+          <i class="fab fa-facebook" style="color: #3b5998"></i>  {{ .Params.facebook }}
+        </li>
+        {{ end}}
+
+         {{ if .Params.instagram}}
+        <li>
+          <i class="fab fa-instagram" style="color: #E1306C"></i>  {{ .Params.instagram }}
+        </li>
+        {{ end}}
+
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <footer class="card-footer">
+    <p *ngIf="item.valor_entrega" class="card-footer-item">
+
+        <span>
+          <i class="fas fa-money-bill" style="color: #216C2A"></i>
+          <b> Valor da entrega:</b> {{ .Params.Price_delivery }} reais
+        </span>
+
+
+    </p>
+
+    <p *ngIf="item.tempo_entrega" class="card-footer-item">
+
+      <span>
+        <i class="fas fa-clock"></i>
+        <b> Tempo de entrega:</b> {{ .Params.Time_delivery }} dias
+
+      </span>
+
+       </p>
+  </footer>
+</div>

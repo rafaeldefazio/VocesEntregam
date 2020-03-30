@@ -1,0 +1,44 @@
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.items-head p {
+  padding: 5px 20px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.items-head hr {
+  width: 20%;
+  margin: 0px 30px;
+  border: 1px solid black;
+}
+
+.items-body {
+  padding: 30px;
+  margin: 10px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+
+
+.items-body ul li {
+  padding: 10px;
+  padding-right: 0px;
+  grid-gap: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.items-body li:hover {
+  border-radius: 15px;
+  border: 1px solid #0B5AA2;
+}
+
+.items-body-content i {
+  align-self: center;
+  font-weight: bold;
+}
