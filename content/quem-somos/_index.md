@@ -2,6 +2,8 @@
 title = "Quem somos"
 +++
 
+# Contato
+
 <i class="fas fa-truck is-size-3"></i>
 
 

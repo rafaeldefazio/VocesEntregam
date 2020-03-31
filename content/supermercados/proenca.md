@@ -8,7 +8,7 @@ whats = ["(17) 99131-8601", "(17) 99131-8601", "(17) 99131-8601"]
 phone = ["(17) 99108-1911"]
 instagram = "instagram"
 facebook = "facebook"
-image = "https://img.sitemercado.com.br/redes/bde1b9438290cc0015e47720ebf3ce7f.png"
+image = "https://seeklogo.com/images/P/proenca-supermercados-logo-5335DFAA56-seeklogo.com.jpg"
 +++
 
 asdjkfajs dfkljas lçdjfakçs jdfklaj sdlkfjaslçkdj fasdjkfajs dfkljas lçdjfakçs jdfklaj sdlkfjaslçkdj fasdjkfajs dfkljas lçdjfakçs jdfklaj sdlkfjaslçkdj fasdjkfajs dfkljas lçdjfakçs jdfklaj sdlkfjaslçkdj fasdjkfajs dfkljas lçdjfakçs jdfklaj sdlkfjaslçkdj fasdjkfajs dfkljas lçdjfakçs jdfklaj sdlkfjaslçkdj fasdjkfajs dfkljas lçdjfakçs jdfklaj sdlkfjaslçkdj fasdjkfajs dfkljas lçdjfakçs jdfklaj sdlkfjaslçkdj fasdjkfajs dfkljas lçdjfakçs jdfklaj sdlkfjaslçkdj f

@@ -30,6 +30,14 @@ theme = "bulma"
     URL = "/supermercados"
     pre = "fa fa-shopping-cart"
     weight = 2
+
+
+
+    [[menu.nav]]
+    name = "Restaurantes"
+    URL = "/restaurantes"
+    pre = "fas fa-utensils"
+    weight = 3
     
 
 
@@ -37,31 +45,51 @@ theme = "bulma"
     name = "Padarias"
     URL = "/padarias"
     pre = "fas fa-bread-slice"
-    weight = 3
+    weight = 4
 
 
 
     [[menu.nav]]
     name = "Açougues"
-    URL = "/açougues"
+    URL = "/acougues"
     pre = "fas fa-bacon"
-    weight = 4
+    weight = 5
+
+
+    [[menu.nav]]
+    name = "Docerias"
+    URL = "/docerias"
+    pre = "fas fa-candy-cane"
+    weight = 6
+
+
+    [[menu.nav]]
+    name = "Varejões"
+    URL = "/varejoes"
+    pre = "fas fa-carrot"
+    weight = 6
+
+
+    [[menu.nav]]
+    name = "Sorveterias e açaí"
+    URL = "/sorveterias-e-acai"
+    pre = "fas fa-ice-cream"
+    weight = 7
 
 
 
     [[menu.nav]]
     name = "Quem somos"
     URL = "/quem-somos"
-    pre = "fas fa-people-carry"
-    weight = 5
+    pre = "fa fa-people-carry"
+    weight = 8
 
 
     [[menu.nav]]
     name = "Contato"
     URL = "/contato"
     pre = "fas fa-envelope"
-    weight = 6
-
+    weight = 9
 
 
 
