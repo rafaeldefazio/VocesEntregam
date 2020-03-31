@@ -50,8 +50,8 @@ theme = "bulma"
 
 
     [[menu.nav]]
-    name = "Quem?"
-    URL = "/quemsomos"
+    name = "Quem somos"
+    URL = "/quem-somos"
     pre = "fas fa-people-carry"
     weight = 5
 

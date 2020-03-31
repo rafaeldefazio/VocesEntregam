@@ -1,0 +1,52 @@
+{{ define "title"}} {{.Title}} | {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "menu" .}} {{end}} 
+
+{{ define "main" }}
+
+<section class="main-content columns is-fullheight">
+
+    <aside class="column is-2 is-narrow-mobile is-fullheight section is-hidden-touch">
+      <p class="menu-label is-hidden-touch">Categorias</p>
+      <ul class="menu-list">
+        {{ $current := . }}
+
+        {{ range .Site.Menus.nav }}
+          {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+          {{ $active := or $active (eq .Name $current.Title) }}
+
+          <li>
+                <a href="{{ .URL }}" class="{{if $active}}is-active{{end}}">
+                    <span class="icon"><i class="{{ .Pre  }}"></i></span> {{ .Name}}
+                  </a>
+                </li>
+
+        {{ end }}
+      </ul>
+
+    </aside>
+
+    <div class="container column is-10">
+      <div class="section">
+
+        {{ .Content }}
+
+
+       
+
+  
+
+<!-- 
+
+        {{ range first 10 .Site.Taxonomies.categories.supermercado }}
+        {{ partial "category-summary" . }} <br/>
+        {{ end }}
+
+ -->
+      </div>
+    </div>
+
+  </section>
+
+{{ end }} 
+
+{{ define "footer" }} {{ partial "footer" .}} {{ end }}
