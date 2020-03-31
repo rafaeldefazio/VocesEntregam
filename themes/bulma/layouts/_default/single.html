@@ -7,13 +7,39 @@
 {{ define "main" }}
 
 
-<div class="container">
+<section class="main-content columns is-fullheight">
+
+    <aside class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
+      <p class="menu-label is-hidden-touch">Categorias</p>
+      <ul class="menu-list">
+        {{ $current := . }}
+
+
+
+
+
+        {{ range .Site.Menus.nav }}
+          {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+          {{ $active := or $active (eq .Name $current.Title) }}
+          {{ $active := or $active (eq (replaceRE "^..*" "$1" $current.URL) $current.Section) }}
+
+
+          <li>
+                <a href="{{ .URL }}" class="{{if $active}}is-active{{end}}">
+                    <span class="icon"><i class="{{ .Pre  }}"></i></span> {{ .Name}}
+                  </a>
+                </li>
+
+        {{ end }}
+      </ul>
+
+    </aside>
 
 
   <!-- START ARTICLE FEED -->
 
   <section class="articles">
-    <div class="column is-8 is-offset-2">
+    <div class="column is-offset-2 is-8">
 
 
       <!-- START ARTICLE -->
@@ -139,5 +165,8 @@
 
 
   {{ end }} 
+
+
+  {{ define "footer" }} {{ partial "footer" .}} {{ end }}
   
   

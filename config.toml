@@ -48,3 +48,20 @@ theme = "bulma"
     weight = 4
 
 
+
+    [[menu.nav]]
+    name = "Quem?"
+    URL = "/quemsomos"
+    pre = "fas fa-people-carry"
+    weight = 5
+
+
+    [[menu.nav]]
+    name = "Contato"
+    URL = "/contato"
+    pre = "fas fa-envelope"
+    weight = 6
+
+
+
+
