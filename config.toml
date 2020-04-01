@@ -42,8 +42,8 @@ theme = "bulma"
 
 
     [[menu.nav]]
-    name = "Padarias"
-    URL = "/padarias"
+    name = "Padarias e Conveniência"
+    URL = "/padarias-e-conveniencia"
     pre = "fas fa-bread-slice"
     weight = 4
 
