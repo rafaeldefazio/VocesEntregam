@@ -2,8 +2,8 @@
 title = "Planalto Carnes"
 categories = ["acougues", "estabelecimentos"]
 description = "a modern approach to copy text to clipboard in hugo"
-price_delivery = "5 reais"
-time_delivery = "2"
+price_delivery = "x reais"
+time_delivery = "n dias"
 phone = [" (17) 3523-1961"]
 instagram = "instagram"
 facebook = "facebook"
