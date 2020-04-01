@@ -73,8 +73,9 @@
               
                 </div>
 
-
+                {{if .Description }}
                  <h3>{{ .Description }}</h3>
+                {{ end }}
                 </div>
   
               </div>
@@ -88,11 +89,13 @@
            <br/>
 
 
+           {{ if .Content }} 
           <div class="content article-body">
             <h1 class="title is-4 has-text-weight-bold">Mais informações</h1>
             <hr>
             <p>{{ .Content }} </p>
           </div>
+          {{ end }}
 
 
           <div class="items mt-20">
