@@ -1,7 +1,7 @@
 +++
 title = "Antunes Supermercados"
 categories = ["supermercado", "estabelecimentos"]
-description = "a modern approach to copy text to clipboard in hugo"
+description = "O Supermercado Antunes trabalha no dever de satisfazer e surpreender seus clientes com variedades de produtos e ótimos serviços prestados, se atentando sempre aos acontecimentos do mercado."
 price_delivery = "não informado"
 time_delivery = "não informado"
 phone = ["(17) 99618-6024", "(17) 99618-6051"]
