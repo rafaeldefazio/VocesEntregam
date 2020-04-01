@@ -93,3 +93,11 @@ theme = "bulma"
 
 
 
+    [[menu.nav]]
+    name = "Colabore"
+    URL = "https://docs.google.com/forms/d/e/1FAIpQLSep1PKvQ_o4LGyPNFcgSk9mOKUpPWBbMytgbkxivbFTv3pJfA/viewform?usp=sf_link"
+    pre = "fas fa-users"
+    weight = 10
+
+
+
